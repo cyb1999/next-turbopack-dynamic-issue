@@ -1,3 +1,11 @@
+'use client'
+import { useEffect } from 'react'
+import SidebarContent from './components/SidebarContent'
+import { redirect } from 'next/navigation'
+
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  useEffect(() => {
+    redirect('/chat')
+  }, [])
+  return null
 }

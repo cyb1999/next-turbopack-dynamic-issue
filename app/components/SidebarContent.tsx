@@ -15,7 +15,6 @@ const DynamicSidebarComponent: React.FC<DynamicSidebarComponentProps> = memo(
         loading: () => <div>loading...</div>,
       })
     }, [componentPath])
-    console.log(import(`${componentPath}`))
     return <DynamicComponent />
   }
 )
